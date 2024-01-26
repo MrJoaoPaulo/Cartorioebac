@@ -126,6 +126,7 @@ int main()													//FUNÇÃO PRINCIPAL.
 		printf("\t 1 - Registrar nomes\n");
 		printf("\t 2 - Consultar nomes\n");
 		printf("\t 3 - Deletar nomes\n\n");
+		printf("\t 4 - Sair do sistema\n\n");
 		printf("Opção: ");											//Fim do menu.
 	
 		scanf("%d", &opcao);										//Escolha do usuário.
@@ -145,6 +146,11 @@ int main()													//FUNÇÃO PRINCIPAL.
 			
 			case 3:
 			deletar();												//Chamada da função Deletar.
+			break;
+			
+			case 4:													//Função Sair do sistema.
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;												//"Retorna valor zero". ou seja, quebraça o laço, quebra a função, quebra tudo e sai do sistema.
 			break;
 			
 			default:
